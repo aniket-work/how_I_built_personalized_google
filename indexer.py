@@ -9,7 +9,18 @@ from dotenv import load_dotenv
 # Load environment variables from a .env file
 load_dotenv()
 
+
 def load_and_retrieve_docs(url, persist_directory):
+    """
+    Load and retrieve documents from a given URL.
+
+    Args:
+    url (str): The URL to load documents from.
+    persist_directory (str): The directory to persist indexed documents.
+
+    Returns:
+    langchain_community.vectorstores.Chroma: The Chroma vector store.
+    """
     loader = WebBaseLoader(
         web_paths=(url,),
         bs_kwargs=dict()
@@ -28,6 +39,12 @@ def load_and_retrieve_docs(url, persist_directory):
 
 
 def index_active_urls(json_file):
+    """
+    Index active URLs from a JSON file.
+
+    Args:
+    json_file (str): The path to the JSON file containing active URLs.
+    """
     with open(json_file, 'r') as file:
         data = json.load(file)
     active_urls = data.get("Active", [])
