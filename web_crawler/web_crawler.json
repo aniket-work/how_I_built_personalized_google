@@ -1,0 +1,15 @@
+{
+    "Active": [
+        "https://python.langchain.com/v0.2/docs/how_to/few_shot_examples/",
+        "https://python.langchain.com/v0.2/docs/how_to/example_selectors_length_based/",
+        "https://python.langchain.com/v0.2/docs/how_to/logprobs/",
+        "https://python.langchain.com/v0.2/docs/how_to/document_loader_csv/",
+        "https://docs.llamaindex.ai/en/stable/getting_started/installation/",
+        "https://docs.llamaindex.ai/en/stable/getting_started/reading/"
+    ],
+    "Inactive": [
+        "https://python.langchain.com/v0.2/docs/how_to/callbacks_runtime/",
+        "https://python.langchain.com/v0.2/docs/how_to/chatbots_memory/",
+        "https://docs.llamaindex.ai/en/stable/getting_started/starter_tools/rag_cli/"
+    ]
+}
